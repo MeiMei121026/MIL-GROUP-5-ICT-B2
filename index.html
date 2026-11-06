@@ -1,0 +1,1469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MIL Group 5 | Grade 12 - ICT - B2</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="homeMusic" class="page-audio" data-page="home" data-role="music" loop>
+  <source src="audio/HOME.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="hoverSfx" data-role="hover-sfx">
+  <source src="audio/HOVER.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="clickSfx" data-role="click-sfx">
+  <source src="audio/CLICK.mp3" type="audio/mpeg">
+</audio>
+
+<div class="scanlines" aria-hidden="true"></div>
+
+<!-- ===================== NAVIGATION BAR (shown on every page) ===================== -->
+<header class="site-header">
+  <a class="brand" href="#/home">DANGANRONPA</a>
+  <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span></button>
+  <nav id="mainNav" aria-label="Main">
+    <a href="#/home" data-nav="home">Home</a>
+    <a href="#/members" data-nav="members">Group Members</a>
+    <a href="#/lessons" data-nav="lessons">Lessons</a>
+    <a href="#/trial" data-nav="trial">Final Class Trial</a>
+  </nav>
+  <button class="sound-btn" id="soundBtn" type="button" aria-pressed="false">Sound: Off</button>
+  <input class="volume" id="volume" type="range" min="0" max="100" value="70" aria-label="Volume">
+</header>
+
+<main id="main">
+
+<!-- =====================================================================
+     PAGE 1: HOME
+     ===================================================================== -->
+<section class="page page-home" id="page-home" data-page="home" aria-label="Home">
+  <div class="page-bg" style="background-image:url('BACK.gif');"></div>
+
+  <div class="hero fade">
+    <div class="hero-image banner-img" style="background-image:url('LOGO.jpg');" role="img" aria-label="Hero image"></div>
+    <div class="hero-text">
+      <h1 class="glitch" data-text="[HOME TITLE HERE]">THE TRIAL OF INFORMATION</h1>
+      <p class="welcome">The Trial of Information Begins Here. Every message has a source. Every image has meaning. Every piece of information tells a story. As you enter this archive, you'll uncover the lessons that shaped our understanding of media, technology, communication, and digital citizenship.</p>
+      <a class="btn btn-primary" href="#/lessons">Start Investigation</a>
+    </div>
+  </div>
+
+  <div class="home-nav fade">
+    <a class="btn" href="#/members">ABOUT US</a>
+    <a class="btn" href="#/lessons">Lessons</a>
+    <a class="btn btn-primary" href="#/trial">Final Class Trial</a>
+  </div>
+</section>
+
+<!-- =====================================================================
+     PAGE 2: GROUP MEMBERS (7 cards)
+     ===================================================================== -->
+<section class="page" id="page-members" data-page="members" aria-label="Group Members">
+  <div class="page-bg" style="background-image:url('CHA.jpg');"></div>
+  <div class="page-banner banner-img fade" style="background-image:url('BANNER.jpg');">
+    <h1 class="page-title">ABOUT US</h1>
+  </div>
+  <div class="card-grid members-grid fade">
+
+    <a class="card member-card" href="#/member-1">
+      <div class="card-img banner-img" style="background-image:url('EL.jpg');" role="img" aria-label="Member 1 photo"></div>
+      <div class="card-body">
+        <h2>FILE #01:</h2>
+        <h3>Cardel Knoxx Vincent R. Regaliza</h3>
+        <p>Leader</p>
+        <p>Status: Active</p>
+      </div>
+    </a>
+
+    <a class="card member-card" href="#/member-2">
+      <div class="card-img banner-img" style="background-image:url('YU.jpg');" role="img" aria-label="Member 2 photo"></div>
+      <div class="card-body">
+        <h2>FILE #02:</h2>
+        <h3>Chryz Jordane Angel O. Yu</h3>
+        <p>Assistant Leader</p>
+        <p>Status: Active</p>
+      </div>
+    </a>
+
+    <!-- ========== MEMBER 3 CARD (to change the link when clicked, edit href below) ========== -->
+    <a class="card member-card" href="#/member-3">
+      <div class="card-img banner-img" style="background-image:url('CLA.jpg');" role="img" aria-label="Member 3 photo"></div>
+      <div class="card-body">
+        <h2>FILE #03:</h2>
+        <h3>Princess Clarisse A. Yecla</h3>
+        <p>Member</p>
+        <p>Status: Active</p>
+      </div>
+    </a>
+
+    <!-- ========== MEMBER 4 CARD (to change the link when clicked, edit href below) ========== -->
+    <a class="card member-card" href="#/member-4">
+      <div class="card-img banner-img" style="background-image:url('RETES.jpg');" role="img" aria-label="Member 4 photo"></div>
+      <div class="card-body">
+        <h2>FILE #04:</h2>
+        <h3>Jhon Harold Anthony Retes</h3>
+        <p>Member</p>
+        <p>Status: Active</p>
+      </div>
+    </a>
+
+    <!-- ========== MEMBER 5 CARD (to change the link when clicked, edit href below) ========== -->
+    <a class="card member-card" href="#/member-5">
+      <div class="card-img banner-img" style="background-image:url('RIZZ.jpg');" role="img" aria-label="Member 5 photo"></div>
+      <div class="card-body">
+        <h2>FILE #05:</h2>
+        <h3>Sean Juval R. Rius</h3>
+        <p>Member</p>
+        <p>Status: Active</p>
+      </div>
+    </a>
+
+    <!-- ========== MEMBER 6 CARD (to change the link when clicked, edit href below) ========== -->
+    <a class="card member-card" href="#/member-6">
+      <div class="card-img banner-img" style="background-image:url('AJ.jpg');" role="img" aria-label="Member 6 photo"></div>
+      <div class="card-body">
+        <h2>FILE #06:</h2>
+        <h3>Aldrin John A. Soneja</h3>
+        <p>Member</p>
+        <p>Status: Active</p>
+      </div>
+    </a>
+
+    <!-- ========== MEMBER 7 CARD (to change the link when clicked, edit href below) ========== -->
+    <a class="card member-card" href="#/member-7">
+      <div class="card-img banner-img" style="background-image:url('BAM.jpg');" role="img" aria-label="Member 7 photo"></div>
+      <div class="card-body">
+        <h2>FILE #07:</h2>
+        <h3>Jhon Angelo G. Villegas</h3>
+        <p>Member</p>
+        <p>Status: Active</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- =====================================================================
+     PAGE 3: LESSONS HUB (8 Case File banners)
+     ===================================================================== -->
+<section class="page" id="page-lessons" data-page="lessons" aria-label="Lessons">
+  <div class="page-bg" style="background-image:url('BANNER.jpg');"></div>
+  <div class="page-banner banner-img fade" style="background-image:url('BRO.jpg');">
+
+    <h1 class="page-title">Lessons</h1>
+  </div>
+  <div class="card-grid lessons-grid fade">
+
+    <!-- ========== CASE FILE 01 BANNER (clicking opens Lesson 1 page) ========== -->
+    <a class="card lesson-card" href="#/lesson-1">
+      <div class="card-img banner-img" style="background-image:url('L1.png');" role="img" aria-label="Case File 01 banner"></div>
+      <div class="card-body">
+        <h2>Case File 01</h2>
+        <p>Introduction to Media and Information Literacy</p>
+      </div>
+    </a>
+
+    <!-- ========== CASE FILE 02 BANNER (clicking opens Lesson 2 page) ========== -->
+    <a class="card lesson-card" href="#/lesson-2">
+      <div class="card-img banner-img" style="background-image:url('L2.png');" role="img" aria-label="Case File 02 banner"></div>
+      <div class="card-body">
+        <h2>Case File 02</h2>
+        <p>The Evolution of Traditional to New Media</p>
+      </div>
+    </a>
+
+    <!-- ========== CASE FILE 03 BANNER (clicking opens Lesson 3 page) ========== -->
+    <a class="card lesson-card" href="#/lesson-3">
+      <div class="card-img banner-img" style="background-image:url('L3.png');" role="img" aria-label="Case File 03 banner"></div>
+      <div class="card-body">
+        <h2>Case File 03</h2>
+        <p>Types of Media</p>
+      </div>
+    </a>
+
+    <!-- ========== CASE FILE 04 BANNER (clicking opens Lesson 4 page) ========== -->
+    <a class="card lesson-card" href="#/lesson-4">
+      <div class="card-img banner-img" style="background-image:url('L4.png');" role="img" aria-label="Case File 04 banner"></div>
+      <div class="card-body">
+        <h2>Case File 04</h2>
+        <p>Media and Information Sources</p>
+      </div>
+    </a>
+
+    <!-- ========== CASE FILE 05 BANNER (clicking opens Lesson 5 page) ========== -->
+    <a class="card lesson-card" href="#/lesson-5">
+      <div class="card-img banner-img" style="background-image:url('L5.png');" role="img" aria-label="Case File 05 banner"></div>
+      <div class="card-body">
+        <h2>Case File 05</h2>
+        <p>Media and Information Languages</p>
+      </div>
+    </a>
+
+    <!-- ========== CASE FILE 06 BANNER (clicking opens Lesson 6 page) ========== -->
+    <a class="card lesson-card" href="#/lesson-6">
+      <div class="card-img banner-img" style="background-image:url('L6.png');" role="img" aria-label="Case File 06 banner"></div>
+      <div class="card-body">
+        <h2>Case File 06</h2>
+        <p>Legal, Ethical, and Societal Issues in Media and Information</p>
+      </div>
+    </a>
+
+    <!-- ========== CASE FILE 07 BANNER (clicking opens Lesson 7 page) ========== -->
+    <a class="card lesson-card" href="#/lesson-7">
+      <div class="card-img banner-img" style="background-image:url('L7.png');" role="img" aria-label="Case File 07 banner"></div>
+      <div class="card-body">
+        <h2>Case File 07</h2>
+        <p>Opportunities, Challenges, and Power of Media and Information</p>
+      </div>
+    </a>
+
+    <!-- ========== CASE FILE 08 BANNER (clicking opens Lesson 8 page) ========== -->
+    <a class="card lesson-card" href="#/lesson-8">
+      <div class="card-img banner-img" style="background-image:url('L8.png');" role="img" aria-label="Case File 08 banner"></div>
+      <div class="card-body">
+        <h2>Case File 08</h2>
+        <p>Current and Future Trends in Media and Information</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<!-- =====================================================================
+     LESSON PAGES 1 TO 8 (all use the same template; copy one to add more)
+     ===================================================================== -->
+
+<!-- ########## LESSON 1 PAGE (Case File 01) ########## -->
+<section class="page page-lesson" id="page-lesson-1" data-page="lesson-1" aria-label="Case File 01">
+  <div class="page-bg" style="background-image:url('LESSON.jpg');"></div>
+  <div class="page-banner lesson-hero banner-img fade" style="background-image:url('LESBAN.jpg');">
+    <p class="case-label">Case File 01</p>
+    <h1 class="page-title">Introduction to Media and Information</h1>
+  </div>
+
+  <article class="lesson-body">
+    <div class="lesson-block fade">
+      <h2>Lesson Summary</h2>
+      <p><b>Literacy : </b> <br>
+<br> The ability to identify, understand, interpret, create, communicate, and compute using printed and written materials associated with varying contexts. <br>
+<br> Literacy involves a continuum of learning wherein individuals are able to achieve their goals, develop their knowledge and potential, and participate fully in their community and wider society. <br>
+<br> <b> Information : </b> <br>
+<br> A broad term that covers processed data, knowledge derived from study, experience, instructions, signals, or symbols. <br>
+<br> <b>Media: </b><br>
+<br> The physical objects used to communicate with, or the mass communication through physical objects such as radio, television, computers, film, etc. <br>
+<br> It also refers to any physical object used to communicate messages. <br>
+<br> <b>Media Literacy:</b> <br>
+<br> The ability to access, analyze, evaluate, and create media in a variety of forms. <br>
+<br> It aims to empower citizens by providing them with the competencies (knowledge and skills) necessary to engage with traditional media and new technologies. <br>
+<br> <b>Information Literacy: </b> <br>
+<br> The ability to recognize when information is needed, and to locate, evaluate, and effectively communicate information in its various formats. <br>
+<br> <b>Technology Literacy: </b> <br>
+<br> The ability of an individual, either working independently or with others, to responsibly, appropriately, and effectively use technological tools. <br>
+<br> Using these tools an individual can access, manage, integrate, evaluate, create and communicate information. <br>
+<br> <b>Media and Information Literacy: </b> <br>
+<br> The essential skills and competencies that allow individuals to engage with media and other information providers effectively <br>
+<br> Developing of critical thinking and life-long learning skills to socialize and become active citizens <br>
+<br> <b>Media Literacy, Information Literacy, and Technology Literacy: </b> <br>
+<br> <b>Media literacy - </b> highlights the capacity of an individual to understand the functions of media and determine the relevant use and worth of media platforms. <br>
+<br> <b>Information literacy - </b> is the communication or acquiring of data or facts that relate to the use of media information. <br>
+<br> <b>Technology literacy - </b> is the skill of an individual to manipulate technology independently or with the assistance of others in using the technology in an efficient and suitable way. <br>
+<br> <b>Communication and Media Information:</b> <br>
+<br> Communication is affected by media and information because of the advancement of technology and the availability of different communication services. <br>
+<br> These allow us to have access to fast and easy forms of communication through the use of different media platforms and social media sites like Facebook, Messenger, Instagram, Twitter, among others. <br>
+<br> <b>Responsible Use of Media and Information: </b> <br>
+<br> The 21st Century is known as the information age. Now, people are highly dependent on technology in different aspects of their lives such as for communication, entertainment, and work-related activities.
+Some social media are agents of change. <br>
+<br> <b>Here are some tips for the responsible use of media and information: </b> <br>
+<br> <b>Ensure personal information safety -</b> Do not display or give away your personal information on your social media account. <br>
+<br> <b>Get permission -</b> When posting videos or pictures of other people on your social media account, do not forget to ask for the owner's approval and of the people who appeared in the video or picture. <br>
+<br> <b>Think before you click -</b> When posting or sharing on social media, think first if the information you are going to post or share is accurate, helpful, informative, nice, and kind to others. <br>
+<br> <b>Keep your password safe -</b> Keep an eye on your account; do not let others know your password. <br>
+<br> <b>Spread positivity -</b> Share positive and uplifting posts to your friends. <br>
+----- 
+<br> Media and Information Literacy involves necessary skills that let a person interact using different media platforms and get access to information around the globe. These should be learned because we are now living in the information age when the media have a significant role in our society towards disseminating information, connecting people, and acting as an agent of change In our society.</p>
+    </div>
+
+    <div class="lesson-block fade">
+      <h2>Lesson Reflection</h2>
+      <p>Media and information are already a big part of our everyday life, especially since we use our phone and social media almost every day. I usually scroll through posts, watch videos, chat with people, and search for information without really thinking about how much media I actually use. Because of this lesson, I understood that being media and information literate is not just about knowing how to use technology, but also knowing how to use it properly. <br>
+<br> I can relate this to my own experience on social media because there have been times when I saw a post that looked believable and almost shared it, only to find out later that some of the information was wrong or missing context. It made me realize how easy it is to believe something just because a lot of people are sharing it. Sometimes, even the comments can make something seem more convincing. Now, I know that it is better to stop for a moment and check the source before believing or sharing anything. <br>
+<br> The lesson also reminded me that being responsible online is more than just keeping my password safe. It also means respecting other people's privacy, asking permission before posting their pictures, and thinking about how my posts might affect others. Since social media is already a normal part of my daily life, these are things I can actually apply instead of just remembering them for a lesson. <br>
+<br> Overall, I think Media and Information Literacy is useful because we deal with information almost everywhere. It taught me to be more careful with what I believe, post, and share online. Being active on social media is easy, but being a responsible user takes more thought.</p>
+    </div>
+  </article>
+
+  <!-- PREVIOUS / NEXT BUTTONS: change the links in href if you reorder lessons -->
+  <div class="lesson-nav fade">
+    <a class="btn" href="#/lessons">Back to Lessons</a>
+    <a class="btn" href="#/lessons">All Lessons</a>
+    <a class="btn btn-primary" href="#/lesson-2">Next Case</a>
+  </div>
+</section>
+
+<!-- ########## LESSON 2 PAGE (Case File 02) ########## -->
+<section class="page page-lesson" id="page-lesson-2" data-page="lesson-2" aria-label="Case File 02">
+  <div class="page-bg" style="background-image:url('LESSON.jpg');"></div>
+
+  <div class="page-banner lesson-hero banner-img fade" style="background-image:url('LESBAN.jpg');">
+    <p class="case-label">Case File 02</p>
+    <h1 class="page-title">The Evolution of Traditional to New Media</h1>
+  </div>
+
+  <article class="lesson-body">
+    <div class="lesson-block fade">
+      <h2>Lesson Summary</h2>
+      <p>Media has evolved throughout history as technology developed and improved communication among people.<br><br>
+
+<b>Pre-Industrial Age (Before 1700s)</b><br>
+Early people discovered fire, created tools, and developed methods of recording information such as cave paintings, clay tablets, papyrus, Acta Diurna, Dibao, and woodblock printing.<br><br>
+
+<b>Industrial Age (1700s–1930s)</b><br>
+The Industrial Revolution introduced machines that allowed mass production of printed materials. Examples include printing presses, newspapers, typewriters, telephones, telegraphs, and motion pictures.<br><br>
+
+<b>Electronic Age (1930s–1980s)</b><br>
+The use of electricity led to the development of radios, televisions, computers, and other electronic devices. Communication became faster and reached wider audiences.<br><br>
+
+<b>Information Age (1900s–Present)</b><br>
+Also known as the Digital Age, this period is characterized by the internet, social media, smartphones, cloud computing, and advanced digital technologies that allow rapid communication and information sharing worldwide.<br><br>
+
+<b>Summary:</b><br>
+The evolution of media shows how communication continuously improves through innovation. From cave paintings to social media, media has become faster, more accessible, and more interactive.</p>
+    </div>
+
+    <div class="lesson-block fade">
+      <h2>Lesson Reflection</h2>
+      <p>The lesson on the Evolution of Media helped me understand how communication has changed throughout history.<br><br>
+Before learning this lesson, I only thought about modern technology such as smartphones, social media, and the internet. I did not realize that people in ancient times already had ways of recording and sharing information through cave paintings, clay tablets, and written documents.<br><br>
+I can relate this lesson to my daily life because almost everything I do involves modern media. I communicate with friends through messaging apps, search for information online, and watch videos for entertainment and learning. Knowing how media evolved made me appreciate the technologies that we often take for granted today.<br><br>
+The lesson also made me realize that every generation adapts to new forms of media. Just as people before learned to use telephones, radios, and television, our generation continues to adapt to digital platforms and social media. This reminds me that technology will continue to change, and I need to be open to learning new tools and ways of communicating.<br><br>
+Overall, the Evolution of Media showed me how important media is in connecting people and spreading information. Understanding its history helps me appreciate modern communication and encourages me to use technology responsibly.</p>
+    </div>
+  </article>
+
+  <!-- PREVIOUS / NEXT BUTTONS: change the links in href if you reorder lessons -->
+  <div class="lesson-nav fade">
+    <a class="btn" href="#/lesson-1">Previous Case</a>
+    <a class="btn" href="#/lessons">All Lessons</a>
+    <a class="btn btn-primary" href="#/lesson-3">Next Case</a>
+  </div>
+</section>
+
+<!-- ########## LESSON 3 PAGE (Case File 03) ########## -->
+<section class="page page-lesson" id="page-lesson-3" data-page="lesson-3" aria-label="Case File 03">
+  <div class="page-bg" style="background-image:url('LESSON.jpg');"></div>
+
+  <div class="page-banner lesson-hero banner-img fade" style="background-image:url('LESBAN.jpg');">
+    <p class="case-label">Case File 03</p>
+    <h1 class="page-title">Types of Media</h1>
+  </div>
+
+  <article class="lesson-body">
+    <div class="lesson-block fade">
+      <h2>Lesson Summary</h2>
+      <p>Media can be classified according to how information is delivered and consumed.<br><br>
+
+<b>Print Media</b><br>
+Uses paper and ink to communicate information. Examples include books, newspapers, magazines, journals, newsletters, and brochures.<br><br>
+
+<b>Text Media</b><br>
+A simple and flexible format for conveying ideas through written words, whether handwritten or printed.<br><br>
+
+<b>Visual Media</b><br>
+Refers to pictures, photographs, images, graphics, infographics, cartoons, and other visual elements used to communicate messages.<br><br>
+
+<b>Broadcast Media</b><br>
+Uses airwaves to transmit information. Examples include radio and television.<br><br>
+
+<b>Audio Media</b><br>
+Uses recorded sounds or voice as a medium of communication.<br><br>
+
+<b>Multimedia</b><br>
+Combines text, graphics, images, video, animation, and audio in a digital format.<br><br>
+
+<b>New Media</b><br>
+Refers to modern digital platforms such as blogs, wikis, podcasts, augmented reality, and video games.<br><br>
+
+<b>Media Convergence</b><br>
+The merging of different media technologies into one device or platform. Smartphones are examples of media convergence because they combine camera, internet, radio, messaging, and video functions.<br><br>
+
+<b>Summary:</b><br>
+Different types of media serve different purposes, but all help people create, access, and share information effectively.</p>
+    </div>
+
+    <div class="lesson-block fade">
+      <h2>Lesson Reflection</h2>
+      <p>This lesson made me realize that media is present almost everywhere and comes in many forms.<br><br>
+Before studying this lesson, I usually associated media with social media platforms only. However, I learned that books, newspapers, radio programs, photographs, videos, and websites are all forms of media that help deliver information to people.<br><br>
+I use different types of media every day without noticing it. I read messages, listen to music, watch videos, browse websites, and communicate through social networking sites. Learning about the different types of media helped me understand how information is shared in different ways depending on the purpose and audience.<br><br>
+The concept of media convergence stood out to me because smartphones combine several forms of media in a single device. This convenience makes communication easier but also requires responsible usage.<br><br>
+Overall, this lesson helped me appreciate the different types of media and their role in everyday communication and learning.</p>
+    </div>
+  </article>
+
+  <!-- PREVIOUS / NEXT BUTTONS: change the links in href if you reorder lessons -->
+  <div class="lesson-nav fade">
+    <a class="btn" href="#/lesson-2">Previous Case</a>
+    <a class="btn" href="#/lessons">All Lessons</a>
+    <a class="btn btn-primary" href="#/lesson-4">Next Case</a>
+  </div>
+</section>
+
+<!-- ########## LESSON 4 PAGE (Case File 04) ########## -->
+<section class="page page-lesson" id="page-lesson-4" data-page="lesson-4" aria-label="Case File 04">
+  <div class="page-bg" style="background-image:url('LESSON.jpg');"></div>
+
+  <div class="page-banner lesson-hero banner-img fade" style="background-image:url('LESBAN.jpg');">
+    <p class="case-label">Case File 04</p>
+    <h1 class="page-title">Media and Information Sources</h1>
+  </div>
+
+  <article class="lesson-body">
+    <div class="lesson-block fade">
+      <h2>Lesson Summary</h2>
+      <p>Reliable information comes from different sources that help people gather accurate knowledge.<br><br>
+
+<b>Main Sources of Information</b><br><br>
+
+<b>Indigenous Knowledge</b><br>
+Knowledge unique to a particular community and passed down through oral traditions, cultural practices, legends, myths, songs, and rituals.<br><br>
+
+<b>Library</b><br>
+A place containing books, journals, databases, and other resources that provide access to information for research and learning.<br><br>
+
+<b>Internet</b><br>
+A global network of interconnected computers that provides access to information and communication services worldwide.<br><br>
+
+<b>Classifications of Information Sources</b><br><br>
+
+<b>Primary Sources</b><br>
+Original materials such as interviews, speeches, photographs, surveys, research results, letters, and personal records.<br><br>
+
+<b>Secondary Sources</b><br>
+Sources that analyze, explain, or interpret information from primary sources. Examples include reviews, commentaries, and monographs.<br><br>
+
+<b>Tertiary Sources</b><br>
+Sources that organize and compile information from primary and secondary sources such as directories, bibliographies, and yearbooks.<br><br>
+
+<b>Summary:</b><br>
+Understanding different sources of information helps individuals locate reliable data and evaluate information effectively.</p>
+    </div>
+
+    <div class="lesson-block fade">
+      <h2>Lesson Reflection</h2>
+      <p>The lesson on Media and Information Sources taught me that information can come from many different places.<br><br>
+Most of the time, I immediately search the internet whenever I need information. Because of this lesson, I learned that there are also other reliable sources such as libraries, indigenous knowledge, and primary documents.<br><br>
+I realized that not all information online is accurate. Some websites may contain incomplete or misleading information. This is why it is important to evaluate sources carefully and compare information from multiple references.<br><br>
+Learning about primary, secondary, and tertiary sources helped me understand how information is organized and how research should be conducted properly. It made me more aware of the importance of using reliable evidence in school activities.<br><br>
+Overall, this lesson taught me to be more critical and responsible when searching for information and to always check the credibility of my sources.</p>
+    </div>
+  </article>
+
+  <!-- PREVIOUS / NEXT BUTTONS: change the links in href if you reorder lessons -->
+  <div class="lesson-nav fade">
+    <a class="btn" href="#/lesson-3">Previous Case</a>
+    <a class="btn" href="#/lessons">All Lessons</a>
+    <a class="btn btn-primary" href="#/lesson-5">Next Case</a>
+  </div>
+</section>
+
+<!-- ########## LESSON 5 PAGE (Case File 05) ########## -->
+<section class="page page-lesson" id="page-lesson-5" data-page="lesson-5" aria-label="Case File 05">
+  <div class="page-bg" style="background-image:url('LESSON.jpg');"></div>
+
+  <div class="page-banner lesson-hero banner-img fade" style="background-image:url('LESBAN.jpg');">
+    <p class="case-label">Case File 05</p>
+    <h1 class="page-title">Media and Information Languages</h1>
+  </div>
+
+  <article class="lesson-body">
+    <div class="lesson-block fade">
+      <h2>Lesson Summary</h2>
+      <p>Media language refers to the codes, symbols, conventions, and formats used to communicate meanings through media.<br><br>
+
+<b>Denotative Meaning</b><br>
+The literal and direct meaning of a media text.<br><br>
+
+<b>Connotative Meaning</b><br>
+The implied meaning that is influenced by culture, beliefs, values, and experiences.<br><br>
+
+<b>Media Codes</b><br><br>
+
+<b>Symbolic Codes</b><br>
+Include settings, costumes, colors, props, and acting that create meaning through interpretation.<br><br>
+
+<b>Technical Codes</b><br>
+Include camera angles, editing, audio, and lighting techniques used in media production.<br><br>
+
+<b>Written Codes</b><br>
+Include printed text, dialogue, captions, and lyrics used in media products.<br><br>
+
+<b>Media Conventions</b><br><br>
+
+<b>Form Conventions</b><br>
+The expected arrangement of media content.<br><br>
+
+<b>Story Conventions</b><br>
+The narrative structures, characters, and viewpoints used in storytelling.<br><br>
+
+<b>Genre Conventions</b><br>
+The common themes and elements associated with a particular genre.<br><br>
+
+<b>Summary:</b><br>
+Media language helps audiences understand messages by using specific codes and conventions that create meaning beyond simple words and images.</p>
+    </div>
+
+    <div class="lesson-block fade">
+      <h2>Lesson Reflection</h2>
+      <!-- INSERT REFLECTION HERE (Lesson 5): replace the text, add more <p> tags for more paragraphs -->
+      <p>The lesson on Media and Information Languages helped me understand that media messages are carefully designed to communicate meaning.<br><br>
+Before this lesson, I usually focused only on the message itself. I did not pay much attention to the colors, camera angles, sounds, and symbols used by media creators. After learning about media codes and conventions, I realized that these elements influence how audiences interpret information.<br><br>
+I can see this in advertisements, movies, and social media content. Different techniques are used to persuade people, create emotions, and attract attention. Knowing this allows me to become more aware of how media messages affect my thoughts and decisions.<br><br>
+The lesson also taught me that different people may interpret the same media message differently because of their experiences, culture, and beliefs. Understanding this helps me respect the perspectives of others.<br><br>
+Overall, I learned to analyze media more carefully and not simply accept messages at face value.</p>
+    </div>
+  </article>
+
+  <!-- PREVIOUS / NEXT BUTTONS: change the links in href if you reorder lessons -->
+  <div class="lesson-nav fade">
+    <a class="btn" href="#/lesson-4">Previous Case</a>
+    <a class="btn" href="#/lessons">All Lessons</a>
+    <a class="btn btn-primary" href="#/lesson-6">Next Case</a>
+  </div>
+</section>
+
+<!-- ########## LESSON 6 PAGE (Case File 06) ########## -->
+<section class="page page-lesson" id="page-lesson-6" data-page="lesson-6" aria-label="Case File 06">
+  <div class="page-bg" style="background-image:url('LESSON.jpg');"></div>
+
+  <div class="page-banner lesson-hero banner-img fade" style="background-image:url('LESBAN.jpg');">
+    <p class="case-label">Case File 06</p>
+    <h1 class="page-title">Legal, Ethical, and Societal Issues in Media and Information</h1>
+  </div>
+
+  <article class="lesson-body">
+    <div class="lesson-block fade">
+      <h2>Lesson Summary</h2>
+      <p>Digital citizens must understand their rights and responsibilities when using media and information.<br><br>
+
+<b>Intellectual Property (IP)</b><br>
+Refers to creations of the mind such as inventions, literary works, artistic works, trademarks, and designs.<br><br>
+
+<b>Types of Intellectual Property</b><br>
+• Copyright<br>
+• Patent<br>
+• Trademark<br>
+• Industrial Design<br>
+• Geographical Indications and Appellations of Origin<br><br>
+
+<b>Fair Use</b><br>
+Allows copyrighted works to be used for purposes such as research, teaching, reporting, criticism, and commentary under certain conditions.<br><br>
+
+<b>Creative Commons</b><br>
+Provides copyright licenses that allow creators to legally share and distribute their works.<br><br>
+
+<b>Netiquette</b><br>
+Refers to proper online behavior and respect toward others in digital environments.<br><br>
+
+<b>Digital Footprint</b><br>
+The trail of data left behind by a person's online activities.<br><br>
+
+<b>Digital Divide</b><br>
+The gap between people who have access to technology and those who do not.<br><br>
+
+<b>Computer Addiction and Cyberbullying</b><br>
+Excessive use of the internet may negatively affect mental health, while cyberbullying involves using digital platforms to harm, harass, or embarrass others.<br><br>
+
+<b>Summary:</b><br>
+Responsible use of media requires understanding legal, ethical, and social issues that affect digital interactions.
+    </div>
+
+    <div class="lesson-block fade">
+      <h2>Lesson Reflection</h2>
+      <p>
+The lesson on Legal, Ethical, and Societal Issues in Media and Information is very relevant to my daily life because I frequently use the internet and social media.<br><br>
+I learned the importance of respecting intellectual property and giving proper credit to content creators. Many people share or copy content online without realizing that it may violate copyright laws.<br><br>
+The discussion about netiquette also reminded me that people on the internet deserve the same respect as people in real life. Being responsible online means using respectful language, protecting privacy, and thinking before posting.<br><br>
+I also became more aware of my digital footprint. Every post, comment, and activity online contributes to a record that may remain available for a long time. Because of this, I should be more careful about what I share online.<br><br>
+Overall, this lesson helped me become more aware of my responsibilities as a digital citizen and encouraged me to use technology appropriately and ethically.</p>
+    </div>
+  </article>
+
+  <!-- PREVIOUS / NEXT BUTTONS: change the links in href if you reorder lessons -->
+  <div class="lesson-nav fade">
+    <a class="btn" href="#/lesson-5">Previous Case</a>
+    <a class="btn" href="#/lessons">All Lessons</a>
+    <a class="btn btn-primary" href="#/lesson-7">Next Case</a>
+  </div>
+</section>
+
+<!-- ########## LESSON 7 PAGE (Case File 07) ########## -->
+<section class="page page-lesson" id="page-lesson-7" data-page="lesson-7" aria-label="Case File 07">
+  <div class="page-bg" style="background-image:url('LESSON.jpg');"></div>
+
+  <div class="page-banner lesson-hero banner-img fade" style="background-image:url('LESBAN.jpg');">
+    <p class="case-label">Case File 07</p>
+    <h1 class="page-title">Opportunities, Challenges, and Power of Media and Information</h1>
+  </div>
+
+  <article class="lesson-body">
+    <div class="lesson-block fade">
+      <h2>Lesson Summary</h2>
+      <p>Media and information provide many opportunities but also present challenges and risks.<br><br>
+
+<b>Opportunities</b><br>
+• Online Shopping<br>
+• Citizen Journalism<br>
+• Online Education<br>
+• Easier Communication<br>
+• Faster Access to Information<br><br>
+
+<b>Challenges</b><br>
+• Age-inappropriate content<br>
+• Illegal content<br>
+• Privacy invasion<br>
+• Identity theft<br>
+• Phishing scams<br><br>
+
+<b>Threats and Risks</b><br>
+• Fake news<br>
+• Piracy<br>
+• Libel and Slander<br>
+• Cybercrime<br><br>
+
+<b>Influence of Media</b><br><br>
+
+<b>Educational</b><br>
+Enhances teaching, learning, and critical thinking skills.<br><br>
+
+<b>Social</b><br>
+Connects people and influences relationships and interactions.<br><br>
+
+<b>Economic</b><br>
+Creates jobs, promotes business opportunities, and supports online entrepreneurship.<br><br>
+
+<b>Political</b><br>
+Encourages public awareness, participation, and communication between government and citizens.<br><br>
+
+<b>Summary:</b><br>
+Media is a powerful tool that can educate, inform, and connect people when used responsibly.</p>
+    </div>
+
+    <div class="lesson-block fade">
+      <h2>Lesson Reflection</h2>
+      <p>This lesson showed me that media and information provide many opportunities but also create challenges and risks.<br><br>
+I enjoy the benefits of media through online learning, communication, and entertainment. Access to information has become easier than ever, and people can learn almost anything online.<br><br>
+However, I also realized that media has certain dangers such as fake news, scams, identity theft, and privacy issues. These problems remind me to be careful when interacting online and to verify information before accepting it as true.<br><br>
+The lesson made me realize that media has a strong influence on education, society, the economy, and politics. Because of its power, media can shape opinions, behaviors, and decisions.<br><br>
+Overall, I learned that media is a powerful tool that can bring positive change when used responsibly and critically.</p>
+    </div>
+  </article>
+
+  <!-- PREVIOUS / NEXT BUTTONS: change the links in href if you reorder lessons -->
+  <div class="lesson-nav fade">
+    <a class="btn" href="#/lesson-6">Previous Case</a>
+    <a class="btn" href="#/lessons">All Lessons</a>
+    <a class="btn btn-primary" href="#/lesson-8">Next Case</a>
+  </div>
+</section>
+
+<!-- ########## LESSON 8 PAGE (Case File 08) ########## -->
+<section class="page page-lesson" id="page-lesson-8" data-page="lesson-8" aria-label="Case File 08">
+  <div class="page-bg" style="background-image:url('LESSON.jpg');"></div>
+
+  <div class="page-banner lesson-hero banner-img fade" style="background-image:url('LESBAN.jpg');">
+    <p class="case-label">Case File 08</p>
+    <h1 class="page-title">Current and Future Trends in Media and Information</h1>
+  </div>
+
+  <article class="lesson-body">
+    <div class="lesson-block fade">
+      <h2>Lesson Summary</h2>
+      <p>Media and information technologies continue to evolve and shape the future of communication and learning.<br><br>
+
+<b>Current and Future Technologies</b><br>
+• Haptics Technology<br>
+• Contextual Awareness<br>
+• Voice and Tone Recognition<br>
+• Intelligent Routing<br>
+• Eye Tracking Technology<br>
+• Internet Glasses<br>
+• Artificial Intelligence (AI)<br>
+• Virtual Reality (VR)<br>
+• Augmented Reality (AR)<br><br>
+
+<b>3D Technologies</b><br>
+• 3D Printing<br>
+• 3D Movies<br>
+• 3D Holograms<br><br>
+
+<b>Massive Open Online Course (MOOC)</b><br>
+A learning system that provides online courses accessible to large numbers of learners from around the world.<br><br>
+
+<b>Types of MOOCs</b><br>
+• xMOOC – follows a traditional course structure.<br>
+• cMOOC – focuses on collaboration and learner participation.<br><br>
+
+<b>Advantages of MOOCs</b><br>
+• Accessibility<br>
+• High-quality learning resources<br>
+• Flexible schedules<br>
+• Self-paced learning<br>
+• Global collaboration<br><br>
+
+<b>Popular MOOC Platforms</b><br>
+• Coursera<br>
+• edX<br>
+• Udacity<br>
+• FutureLearn<br><br>
+
+<b>Summary:</b><br>
+Emerging technologies and online learning platforms continue to transform how people communicate, learn, and interact with information in the modern world.</p>
+    </div>
+
+    <div class="lesson-block fade">
+      <h2>Lesson Reflection</h2>
+      <p>The lesson on Current and Future Trends in Media and Information made me excited about how technology continues to evolve.<br><br>
+Many of the innovations discussed in the lesson, such as artificial intelligence, virtual reality, eye-tracking technology, and smart devices, seemed futuristic but are becoming more common in everyday life.<br><br>
+I was particularly interested in Massive Open Online Courses or MOOCs because they allow people from different parts of the world to access quality education online. This shows how technology can make learning more accessible and convenient.<br><br>
+The lesson also reminded me that although technology provides many benefits, it should still be used responsibly. New technologies can improve communication and learning, but they also require users to think critically and use information carefully.<br><br>
+Overall, this lesson taught me that the future of media and information will continue to bring exciting opportunities. To keep up with these developments, I must remain open to learning, adaptable to change, and responsible in my use of technology.</p>
+    </div>
+  </article>
+
+  <!-- PREVIOUS / NEXT BUTTONS: change the links in href if you reorder lessons -->
+  <div class="lesson-nav fade">
+    <a class="btn" href="#/lesson-7">Previous Case</a>
+    <a class="btn" href="#/lessons">All Lessons</a>
+    <a class="btn btn-primary" href="#/lessons">Back to Lessons</a>
+  </div>
+</section>
+
+<!-- =====================================================================
+     PAGE: FINAL CLASS TRIAL (10 questions, 60 second timer)
+     To change questions, choices or correct answers, edit the QUESTION blocks below.
+     ===================================================================== -->
+<section class="page page-trial" id="page-trial" data-page="trial" aria-label="Final Class Trial">
+  <div class="page-bg" style="background-image:url('Final Banner.jpg');"></div>
+  <div class="page-banner trial-hero banner-img fade" style="background-image:url('BACK.gif');">
+    <h1 class="page-title glitch" data-text="FINAL CLASS TRIAL">FINAL CLASS TRIAL</h1>
+    <p class="trial-sub">&ldquo;There is only one truth.&rdquo;</p>
+  </div>
+
+  <!-- START SCREEN: the 60 second timer begins only after this button is clicked -->
+  <div class="trial-intro fade" id="trialIntro">
+    <!-- CHANGE START SCREEN MESSAGE HERE -->
+    <p>Ten questions. Sixty seconds. Score 8 or more to go free.</p>
+    <button class="btn btn-primary" id="trialStart" type="button">Begin Trial</button>
+  </div>
+
+  <!-- TRIAL AREA: timer and questions (hidden until Begin Trial is clicked) -->
+  <div class="trial-run" id="trialRun" hidden>
+    <div class="trial-hud">
+      <!-- TIMER: the starting time (60 seconds) is set at the top of the trial code in script.js (TOTAL_SECONDS) -->
+      <div class="timer" id="trialTimer" role="timer">01:00</div>
+      <p class="trial-progress" id="trialProgress">Answered 0 / 10</p>
+    </div>
+    <div class="q-list">
+      <!-- ========== QUESTION 1 ========== -->
+      <!-- CHANGE CORRECT ANSWER (Question 1): set data-correct to A, B, C or D -->
+      <article class="q" data-correct="C" style="--i:0;">
+        <!-- QUESTION 1 TEXT HERE -->
+        <h2 class="q-text"><span class="q-no">1</span>What is the ability to access, analyze, evaluate, and create media in various forms?</h2>
+        <!-- QUESTION 1 CHOICES HERE: edit only the text inside each <span> -->
+        <div class="opts">
+          <button class="opt" type="button" data-letter="A"><b>A</b><span>Information Literacy</span></button>
+          <button class="opt" type="button" data-letter="B"><b>B</b><span>Technology Literacy</span></button>
+          <button class="opt" type="button" data-letter="C"><b>C</b><span>Media Literacy</span></button>
+          <button class="opt" type="button" data-letter="D"><b>D</b><span>Communication Literacy</span></button>
+        </div>
+      </article>
+      <!-- ========== QUESTION 2 ========== -->
+      <!-- CHANGE CORRECT ANSWER (Question 2): set data-correct to A, B, C or D -->
+      <article class="q" data-correct="C" style="--i:1;">
+        <!-- QUESTION 2 TEXT HERE -->
+        <h2 class="q-text"><span class="q-no">2</span>Which age is also known as the Digital Age?</h2>
+        <!-- QUESTION 2 CHOICES HERE: edit only the text inside each <span> -->
+        <div class="opts">
+          <button class="opt" type="button" data-letter="A"><b>A</b><span>Industrial Age</span></button>
+          <button class="opt" type="button" data-letter="B"><b>B</b><span>Electronic Age</span></button>
+          <button class="opt" type="button" data-letter="C"><b>C</b><span>Information Age</span></button>
+          <button class="opt" type="button" data-letter="D"><b>D</b><span>Pre-Industrial Age</span></button>
+        </div>
+      </article>
+      <!-- ========== QUESTION 3 ========== -->
+      <!-- CHANGE CORRECT ANSWER (Question 3): set data-correct to A, B, C or D -->
+      <article class="q" data-correct="C" style="--i:2;">
+        <!-- QUESTION 3 TEXT HERE -->
+        <h2 class="q-text"><span class="q-no">3</span>Which type of media includes books, newspapers, magazines, and brochures?</h2>
+        <!-- QUESTION 3 CHOICES HERE: edit only the text inside each <span> -->
+        <div class="opts">
+          <button class="opt" type="button" data-letter="A"><b>A</b><span>Broadcast Media</span></button>
+          <button class="opt" type="button" data-letter="B"><b>B</b><span>New Media</span></button>
+          <button class="opt" type="button" data-letter="C"><b>C</b><span>Print Media</span></button>
+          <button class="opt" type="button" data-letter="D"><b>D</b><span>Multimedia</span></button>
+        </div>
+      </article>
+      <!-- ========== QUESTION 4 ========== -->
+      <!-- CHANGE CORRECT ANSWER (Question 4): set data-correct to A, B, C or D -->
+      <article class="q" data-correct="C" style="--i:3;">
+        <!-- QUESTION 4 TEXT HERE -->
+        <h2 class="q-text"><span class="q-no">4</span>Which of the following is considered a primary source of information?</h2>
+        <!-- QUESTION 4 CHOICES HERE: edit only the text inside each <span> -->
+        <div class="opts">
+          <button class="opt" type="button" data-letter="A"><b>A</b><span>Encyclopedia</span></button>
+          <button class="opt" type="button" data-letter="B"><b>B</b><span>Dictionary</span></button>
+          <button class="opt" type="button" data-letter="C"><b>C</b><span>Interview</span></button>
+          <button class="opt" type="button" data-letter="D"><b>D</b><span>Handbook</span></button>
+        </div>
+      </article>
+      <!-- ========== QUESTION 5 ========== -->
+      <!-- CHANGE CORRECT ANSWER (Question 5): set data-correct to A, B, C or D -->
+      <article class="q" data-correct="B" style="--i:4;">
+        <!-- QUESTION 5 TEXT HERE -->
+        <h2 class="q-text"><span class="q-no">5</span>What is the literal meaning of a media text called?</h2>
+        <!-- QUESTION 5 CHOICES HERE: edit only the text inside each <span> -->
+        <div class="opts">
+          <button class="opt" type="button" data-letter="A"><b>A</b><span>Connotative Meaning</span></button>
+          <button class="opt" type="button" data-letter="B"><b>B</b><span>Denotative Meaning</span></button>
+          <button class="opt" type="button" data-letter="C"><b>C</b><span>Symbolic Meaning</span></button>
+          <button class="opt" type="button" data-letter="D"><b>D</b><span>Audience Meaning</span></button>
+        </div>
+      </article>
+      <!-- ========== QUESTION 6 ========== -->
+      <!-- CHANGE CORRECT ANSWER (Question 6): set data-correct to A, B, C or D -->
+      <article class="q" data-correct="C" style="--i:5;">
+        <!-- QUESTION 6 TEXT HERE -->
+        <h2 class="q-text"><span class="q-no">6</span>Which legal principle allows the limited use of copyrighted material for education and research?</h2>
+        <!-- QUESTION 6 CHOICES HERE: edit only the text inside each <span> -->
+        <div class="opts">
+          <button class="opt" type="button" data-letter="A"><b>A</b><span>Patent</span></button>
+          <button class="opt" type="button" data-letter="B"><b>B</b><span>Copyright</span></button>
+          <button class="opt" type="button" data-letter="C"><b>C</b><span>Fair Use</span></button>
+          <button class="opt" type="button" data-letter="D"><b>D</b><span>Trademark</span></button>
+        </div>
+      </article>
+      <!-- ========== QUESTION 7 ========== -->
+      <!-- CHANGE CORRECT ANSWER (Question 7): set data-correct to A, B, C or D -->
+      <article class="q" data-correct="C" style="--i:6;">
+        <!-- QUESTION 7 TEXT HERE -->
+        <h2 class="q-text"><span class="q-no">7</span>What is the fraudulent attempt to obtain passwords and personal information online?</h2>
+        <!-- QUESTION 7 CHOICES HERE: edit only the text inside each <span> -->
+        <div class="opts">
+          <button class="opt" type="button" data-letter="A"><b>A</b><span>Piracy</span></button>
+          <button class="opt" type="button" data-letter="B"><b>B</b><span>Cyberbullying</span></button>
+          <button class="opt" type="button" data-letter="C"><b>C</b><span>Phishing</span></button>
+          <button class="opt" type="button" data-letter="D"><b>D</b><span>Crowdsourcing</span></button>
+        </div>
+      </article>
+      <!-- ========== QUESTION 8 ========== -->
+      <!-- CHANGE CORRECT ANSWER (Question 8): set data-correct to A, B, C or D -->
+      <article class="q" data-correct="B" style="--i:7;">
+        <!-- QUESTION 8 TEXT HERE -->
+        <h2 class="q-text"><span class="q-no">8</span>Which technology measures eye position and movement?</h2>
+        <!-- QUESTION 8 CHOICES HERE: edit only the text inside each <span> -->
+        <div class="opts">
+          <button class="opt" type="button" data-letter="A"><b>A</b><span>Haptics</span></button>
+          <button class="opt" type="button" data-letter="B"><b>B</b><span>Eye Tracking Technology</span></button>
+          <button class="opt" type="button" data-letter="C"><b>C</b><span>Internet Glasses</span></button>
+          <button class="opt" type="button" data-letter="D"><b>D</b><span>Voice Recognition</span></button>
+        </div>
+      </article>
+      <!-- ========== QUESTION 9 ========== -->
+      <!-- CHANGE CORRECT ANSWER (Question 9): set data-correct to A, B, C or D -->
+      <article class="q" data-correct="A" style="--i:8;">
+        <!-- QUESTION 9 TEXT HERE -->
+        <h2 class="q-text"><span class="q-no">9</span>What does MOOC stand for?</h2>
+        <!-- QUESTION 9 CHOICES HERE: edit only the text inside each <span> -->
+        <div class="opts">
+          <button class="opt" type="button" data-letter="A"><b>A</b><span>Massive Open Online Course</span></button>
+          <button class="opt" type="button" data-letter="B"><b>B</b><span>Media Open Online Course</span></button>
+          <button class="opt" type="button" data-letter="C"><b>C</b><span>Modern Online Open Course</span></button>
+          <button class="opt" type="button" data-letter="D"><b>D</b><span>Media Online Communication</span></button>
+        </div>
+      </article>
+      <!-- ========== QUESTION 10 ========== -->
+      <!-- CHANGE CORRECT ANSWER (Question 10): set data-correct to A, B, C or D -->
+      <article class="q" data-correct="C" style="--i:9;">
+        <!-- QUESTION 10 TEXT HERE -->
+        <h2 class="q-text"><span class="q-no">10</span>What is a set of rules for proper behavior on the internet?</h2>
+        <!-- QUESTION 10 CHOICES HERE: edit only the text inside each <span> -->
+        <div class="opts">
+          <button class="opt" type="button" data-letter="A"><b>A</b><span>Intellectual Property</span></button>
+          <button class="opt" type="button" data-letter="B"><b>B</b><span>Cybercrime</span></button>
+          <button class="opt" type="button" data-letter="C"><b>C</b><span>Netiquette</span></button>
+          <button class="opt" type="button" data-letter="D"><b>D</b><span>Digital Divide</span></button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- =====================================================================
+     CHARACTER PROFILE PAGES 1 TO 7 (opened from the cards on the Group Members page)
+     Search for "INSERT" inside each profile to find every spot to edit.
+     ===================================================================== -->
+<section class="page page-member" id="page-member-1" data-page="member-1" aria-label="Character profile 1">
+  <!-- OPTIONAL PAGE BACKGROUND IMAGE (Member 1): change the file name inside url('...') -->
+  <div class="page-bg" style="background-image:url('PAGE\ 2\ BACKGROUND\ 2.jpg');"></div>
+  <div class="mp-bg" aria-hidden="true"></div>
+
+  <div class="mp-top">
+    <a class="btn" href="#/members">Back to Group Members</a>
+    <a class="btn btn-primary" href="#/home">Back to Home</a>
+  </div>
+
+  <!-- ===== TOP SECTION: NAME AND TITLE ===== -->
+  <!-- CHARACTER BANNER IMAGE (Member 1): the wide image behind the name. Change the file name inside url('...') -->
+  <header class="mp-banner banner-img" style="background-image:url('BRO.jpg');">
+    <p class="mp-case">Character Dossier 01</p>
+    <h1 class="mp-name glitch" data-text="Cardel Knoxx Vincent R. Regaliza">Cardel Knoxx Vincent R. Regaliza</h1>
+    <p class="mp-title">[JACK OF ALL TRADES]</p>
+  </header>
+
+  <!-- ===== MIDDLE SECTION: PORTRAIT AND DOSSIER ===== -->
+  <div class="mp-stage">
+    <figure class="mp-portrait">
+      <div class="mp-spot" aria-hidden="true"></div>
+      <div class="mp-photo banner-img" style="background-image:url('EL.jpg');" role="img" aria-label="Portrait of member 1"></div>
+    </figure>
+
+    <article class="mp-dossier" aria-label="Character dossier 1">
+      <h2>Character Dossier</h2>
+      <dl>
+        <div class="mp-row" style="--i:0;">
+          <dt>Name</dt>
+          <!-- INSERT CHARACTER NAME -->
+          <dd>Cardel Knoxx Vincent R. Regaliza</dd>
+        </div>
+        <div class="mp-row" style="--i:1;">
+          <dt>Role</dt>
+          <dd>Leader</dd>
+        </div>
+        <div class="mp-row" style="--i:2;">
+          <dt>Birthday</dt>
+          <dd>November 13 2008</dd>
+        </div>
+        <div class="mp-row" style="--i:3;">
+          <dt>Strengths</dt>
+          <dd><br>Leadership and teamwork
+<br>Creative problem-solving
+<br>Strong communication skills
+<br>Responsible and organized
+<br>Adaptable under pressure</dd>
+        </div>
+        <div class="mp-row" style="--i:4;">
+          <dt>Fun Fact</dt>
+          <dd><br>Built and managed most of our project system as team leader.
+<br>Enjoys video editing, drawing, and creative digital projects.
+<br>Loves turning ideas into actual working outputs.</dd>
+        </div>
+      </dl>
+    </article>
+  </div>
+
+  <!-- ===== CHARACTER DESCRIPTION ===== -->
+  <section class="mp-desc">
+    <h2>Character Description</h2>
+    <p>A responsible and creative leader who enjoys digital media, video editing, and building innovative projects. Known for being dependable, organized, and committed to helping the team succeed.</p>
+  </section>
+
+  <!-- BOTTOM BUTTONS -->
+  <div class="mp-bottom">
+    <a class="btn" href="#/members">Back to Group Members</a>
+    <a class="btn btn-primary" href="#/home">Back to Home</a>
+  </div>
+</section>
+
+<!-- ########## CHARACTER PROFILE 2 (opens when Member 2's card is clicked) ########## -->
+<section class="page page-member" id="page-member-2" data-page="member-2" aria-label="Character profile 2">
+  <!-- OPTIONAL PAGE BACKGROUND IMAGE (Member 2): change the file name inside url('...') -->
+  <div class="page-bg" style="background-image:url('PAGE\ 2\ BACKGROUND\ 2.jpg');"></div>
+  <div class="mp-bg" aria-hidden="true"></div>
+
+  <div class="mp-top">
+    <a class="btn" href="#/members">Back to Group Members</a>
+    <a class="btn btn-primary" href="#/home">Back to Home</a>
+  </div>
+
+  <!-- ===== TOP SECTION: NAME AND TITLE ===== -->
+  <!-- CHARACTER BANNER IMAGE (Member 2): the wide image behind the name. Change the file name inside url('...') -->
+  <header class="mp-banner banner-img" style="background-image:url('BRO.jpg');">
+    <p class="mp-case">Character Dossier 02</p>
+    <!-- INSERT CHARACTER NAME (big title). Also change data-text to the same name so the glitch effect matches. -->
+    <h1 class="mp-name glitch" data-text="[MEMBER 2 NAME]">Chryz Angel Jordane O. YU</h1>
+    <p class="mp-title">[DAY DREAMER]</p>
+  </header>
+
+  <!-- ===== MIDDLE SECTION: PORTRAIT AND DOSSIER ===== -->
+  <div class="mp-stage">
+    <figure class="mp-portrait">
+      <div class="mp-spot" aria-hidden="true"></div>
+      <div class="mp-photo banner-img" style="background-image:url('YU.jpg');" role="img" aria-label="Portrait of member 2"></div>
+    </figure>
+
+    <!-- CHARACTER DOSSIER (information card): edit the text after each label. Do not delete the <dt> labels. -->
+    <article class="mp-dossier" aria-label="Character dossier 2">
+      <h2>Character Dossier</h2>
+      <dl>
+        <div class="mp-row" style="--i:0;">
+          <dt>Name</dt>
+          <dd>Chryz Angel Jordane O. Yu</dd>
+        </div>
+        <div class="mp-row" style="--i:1;">
+          <dt>Role</dt>
+          <dd>Assistant Leader</dd>
+        </div>
+        <div class="mp-row" style="--i:2;">
+          <dt>Birthday:</dt>
+          <dd>October 5 2009</dd>
+        </div>
+        <div class="mp-row" style="--i:3;">
+          <dt>Strengths</dt>
+          <dd><br>• Creative and imaginative
+            <br>• Artistic
+           <br> • Persistent when working on things I enjoy</dd>
+        </div>
+        <div class="mp-row" style="--i:4;">
+          <dt>Fun Fact</dt>
+          <!-- INSERT FUN FACT -->
+          <dd>Plushie and Stickers Collector
+<br>Kpop Fan
+<br>Pink Enthusiast
+<br>Night Owl
+<br>Asawa ni Sylus</dd>
+        </div>
+      </dl>
+    </article>
+  </div>
+
+  <!-- ===== CHARACTER DESCRIPTION ===== -->
+  <section class="mp-desc">
+    <h2>Character Description</h2>
+    <p>I'm a creative and imaginative person who enjoys art and exploring different interests. I'm usually loud and playful around people I'm comfortable with, but I also have a quiet side where I keep my thoughts to myself. I like doing things my own way and adding a little personal touch to everything I create :3</p>
+  </section>
+
+  <!-- BOTTOM BUTTONS -->
+  <div class="mp-bottom">
+    <a class="btn" href="#/members">Back to Group Members</a>
+    <a class="btn btn-primary" href="#/home">Back to Home</a>
+  </div>
+</section>
+
+<!-- ########## CHARACTER PROFILE 3 (opens when Member 3's card is clicked) ########## -->
+<section class="page page-member" id="page-member-3" data-page="member-3" aria-label="Character profile 3">
+  <div class="page-bg" style="background-image:url('PAGE\ 2\ BACKGROUND\ 2.jpg');"></div>
+  <div class="mp-bg" aria-hidden="true"></div>
+
+  <!-- TOP BUTTONS: Back to the Group Members page and Back to Home -->
+  <div class="mp-top">
+    <a class="btn" href="#/members">Back to Group Members</a>
+    <a class="btn btn-primary" href="#/home">Back to Home</a>
+  </div>
+
+  <!-- ===== TOP SECTION: NAME AND TITLE ===== -->
+  <!-- CHARACTER BANNER IMAGE (Member 3): the wide image behind the name. Change the file name inside url('...') -->
+  <header class="mp-banner banner-img" style="background-image:url('BRO.jpg');">
+    <p class="mp-case">Character Dossier 03</p>
+    <!-- INSERT CHARACTER NAME (big title). Also change data-text to the same name so the glitch effect matches. -->
+    <h1 class="mp-name glitch" data-text="[MEMBER 3 NAME]">Princess Clarisse A. Yecla</h1>
+    <!-- INSERT CHARACTER TITLE (example: Ultimate Researcher, Ultimate Analyst, Ultimate Designer, Ultimate Investigator, Ultimate Storyteller) -->
+    <p class="mp-title">[CLASS PRESIDENT]</p>
+  </header>
+
+  <!-- ===== MIDDLE SECTION: PORTRAIT AND DOSSIER ===== -->
+  <div class="mp-stage">
+    <figure class="mp-portrait">
+      <div class="mp-spot" aria-hidden="true"></div>
+      <div class="mp-photo banner-img" style="background-image:url('CLA.jpg');" role="img" aria-label="Portrait of member 3"></div>
+    </figure>
+
+    <!-- CHARACTER DOSSIER (information card): edit the text after each label. Do not delete the <dt> labels. -->
+    <article class="mp-dossier" aria-label="Character dossier 3">
+      <h2>Character Dossier</h2>
+      <dl>
+        <div class="mp-row" style="--i:0;">
+          <dt>Name</dt>
+          <dd>Princess Clarisse A. Yecla</dd>
+        </div>
+        <div class="mp-row" style="--i:1;">
+          <dt>Role</dt>
+          <dd>Member</dd>
+        </div>
+        <div class="mp-row" style="--i:2;">
+          <dt>Birthday</dt>
+          <dd>July 16 2008</dd>
+        </div>
+        <div class="mp-row" style="--i:3;">
+          <dt>Strengths</dt>
+          <!-- INSERT STRENGTHS -->
+          <dd><br>• Writing stories 
+<br>• Proofreading
+<br>• Math
+<br>• Money 
+</dd>
+        </div>
+      </dl>
+    </article>
+  </div>
+
+  <!-- ===== CHARACTER DESCRIPTION ===== -->
+  <section class="mp-desc">
+    <h2>Character Description</h2>
+    <p>Intimidating at first but when you get to know me, I’m full of opinions and I take risks and caring.</p>
+  </section>
+
+  <!-- BOTTOM BUTTONS -->
+  <div class="mp-bottom">
+    <a class="btn" href="#/members">Back to Group Members</a>
+    <a class="btn btn-primary" href="#/home">Back to Home</a>
+  </div>
+</section>
+
+<!-- ########## CHARACTER PROFILE 4 (opens when Member 4's card is clicked) ########## -->
+<section class="page page-member" id="page-member-4" data-page="member-4" aria-label="Character profile 4">
+  <!-- OPTIONAL PAGE BACKGROUND IMAGE (Member 4): change the file name inside url('...') -->
+  <div class="page-bg" style="background-image:url('PAGE\ 2\ BACKGROUND\ 2.jpg');"></div>
+  <!-- ANIMATED BACKGROUND: moving stripes. Change its colors in style.css (look for .mp-bg) -->
+  <div class="mp-bg" aria-hidden="true"></div>
+
+  <!-- TOP BUTTONS: Back to the Group Members page and Back to Home -->
+  <div class="mp-top">
+    <a class="btn" href="#/members">Back to Group Members</a>
+    <a class="btn btn-primary" href="#/home">Back to Home</a>
+  </div>
+
+  <!-- ===== TOP SECTION: NAME AND TITLE ===== -->
+  <!-- CHARACTER BANNER IMAGE (Member 4): the wide image behind the name. Change the file name inside url('...') -->
+  <header class="mp-banner banner-img" style="background-image:url('BRO.jpg');">
+    <p class="mp-case">Character Dossier 04</p>
+    <!-- INSERT CHARACTER NAME (big title). Also change data-text to the same name so the glitch effect matches. -->
+    <h1 class="mp-name glitch" data-text="[MEMBER 4 NAME]">Jhon Harold Anthony Retes</h1>
+    <!-- INSERT CHARACTER TITLE (example: Ultimate Researcher, Ultimate Analyst, Ultimate Designer, Ultimate Investigator, Ultimate Storyteller) -->
+    <p class="mp-title">[MR. POGI]</p>
+  </header>
+
+  <!-- ===== MIDDLE SECTION: PORTRAIT AND DOSSIER ===== -->
+  <div class="mp-stage">
+    <!-- LARGE PORTRAIT AREA: the spotlight beams are automatic. Only change the image file name below. -->
+    <figure class="mp-portrait">
+      <div class="mp-spot" aria-hidden="true"></div>
+      <div class="mp-photo banner-img" style="background-image:url('RETES.jpg');" role="img" aria-label="Portrait of member 4"></div>
+    </figure>
+
+    <!-- CHARACTER DOSSIER (information card): edit the text after each label. Do not delete the <dt> labels. -->
+    <article class="mp-dossier" aria-label="Character dossier 4">
+      <h2>Character Dossier</h2>
+      <dl>
+        <div class="mp-row" style="--i:0;">
+          <dt>Name</dt>
+          <!-- INSERT CHARACTER NAME -->
+          <dd>Jhon Harold Anthony Retes</dd>
+        </div>
+        <div class="mp-row" style="--i:1;">
+          <dt>Role</dt>
+          <dd>Member</dd>
+        </div>
+        <div class="mp-row" style="--i:2;">
+          <dt>Birthday</dt>
+          <dd>Febuary 16 2009</dd>
+        </div>
+        <div class="mp-row" style="--i:3;">
+          <dt>Strengths</dt>
+          <!-- INSERT STRENGTHS -->
+          <dd><br>• Loyal
+<br>• Understanding
+<br>• Respectful
+<br>• Calm
+<br>• Self-aware</dd>
+        </div>
+      </dl>
+    </article>
+  </div>
+
+  <!-- ===== CHARACTER DESCRIPTION ===== -->
+  <section class="mp-desc">
+    <h2>Character Description</h2>
+    <p>I'm super shy and quiet at first, and I usually only talk when someone talks to me first. But once we are close, I'll be more talkative and playful!</p>
+  </section>
+
+  <!-- BOTTOM BUTTONS -->
+  <div class="mp-bottom">
+    <a class="btn" href="#/members">Back to Group Members</a>
+    <a class="btn btn-primary" href="#/home">Back to Home</a>
+  </div>
+</section>
+
+<!-- ########## CHARACTER PROFILE 5 (opens when Member 5's card is clicked) ########## -->
+<section class="page page-member" id="page-member-5" data-page="member-5" aria-label="Character profile 5">
+  <!-- OPTIONAL PAGE BACKGROUND IMAGE (Member 5): change the file name inside url('...') -->
+  <div class="page-bg" style="background-image:url('PAGE\ 2\ BACKGROUND\ 2.jpg');"></div>
+  <!-- ANIMATED BACKGROUND: moving stripes. Change its colors in style.css (look for .mp-bg) -->
+  <div class="mp-bg" aria-hidden="true"></div>
+
+  <!-- TOP BUTTONS: Back to the Group Members page and Back to Home -->
+  <div class="mp-top">
+    <a class="btn" href="#/members">Back to Group Members</a>
+    <a class="btn btn-primary" href="#/home">Back to Home</a>
+  </div>
+
+  <!-- ===== TOP SECTION: NAME AND TITLE ===== -->
+  <!-- CHARACTER BANNER IMAGE (Member 5): the wide image behind the name. Change the file name inside url('...') -->
+  <header class="mp-banner banner-img" style="background-image:url('BRO.jpg');">
+    <p class="mp-case">Character Dossier 05</p>
+    <!-- INSERT CHARACTER NAME (big title). Also change data-text to the same name so the glitch effect matches. -->
+    <h1 class="mp-name glitch" data-text="[MEMBER 5 NAME]">Sean Juval R. Rius</h1>
+    <!-- INSERT CHARACTER TITLE (example: Ultimate Researcher, Ultimate Analyst, Ultimate Designer, Ultimate Investigator, Ultimate Storyteller) -->
+    <p class="mp-title">[YOUNG STUNNA]</p>
+  </header>
+
+  <!-- ===== MIDDLE SECTION: PORTRAIT AND DOSSIER ===== -->
+  <div class="mp-stage">
+    <!-- LARGE PORTRAIT AREA: the spotlight beams are automatic. Only change the image file name below. -->
+    <figure class="mp-portrait">
+      <div class="mp-spot" aria-hidden="true"></div>
+      <!-- INSERT CHARACTER IMAGE (Member 5): change the file name inside url('...').
+           A tall picture (3:4) works best. A transparent PNG looks great under the spotlight. -->
+      <div class="mp-photo banner-img" style="background-image:url('RIZZ.jpg');" role="img" aria-label="Portrait of member 5"></div>
+    </figure>
+
+    <!-- CHARACTER DOSSIER (information card): edit the text after each label. Do not delete the <dt> labels. -->
+    <article class="mp-dossier" aria-label="Character dossier 5">
+      <h2>Character Dossier</h2>
+      <dl>
+        <div class="mp-row" style="--i:0;">
+          <dt>Name</dt>
+          <!-- INSERT CHARACTER NAME -->
+          <dd>Sean Juval R. Rius</dd>
+        </div>
+        <div class="mp-row" style="--i:1;">
+          <dt>Role</dt>
+          <!-- INSERT ROLE (example: Group Leader) -->
+          <dd>Member</dd>
+        </div>
+        <div class="mp-row" style="--i:2;">
+          <dt>Birthday</dt>
+          <dd>???</dd>
+        </div>
+        <div class="mp-row" style="--i:3;">
+          <dt>Strengths</dt>
+          <!-- INSERT STRENGTHS -->
+          <dd>???</dd>
+        </div>
+      </dl>
+    </article>
+  </div>
+
+  <!-- ===== CHARACTER DESCRIPTION ===== -->
+  <section class="mp-desc">
+    <h2>Character Description</h2>
+    <!-- INSERT CHARACTER DESCRIPTION: replace the text below. For more paragraphs, copy the whole <p> line and paste it underneath. -->
+    <p>PLAY MORE GAMES TO UNLOCK THE CHARACTER!</p>
+  </section>
+
+  <!-- BOTTOM BUTTONS -->
+  <div class="mp-bottom">
+    <a class="btn" href="#/members">Back to Group Members</a>
+    <a class="btn btn-primary" href="#/home">Back to Home</a>
+  </div>
+</section>
+
+<!-- ########## CHARACTER PROFILE 6 (opens when Member 6's card is clicked) ########## -->
+<section class="page page-member" id="page-member-6" data-page="member-6" aria-label="Character profile 6">
+  <!-- OPTIONAL PAGE BACKGROUND IMAGE (Member 6): change the file name inside url('...') -->
+  <div class="page-bg" style="background-image:url('PAGE\ 2\ BACKGROUND\ 2.jpg');"></div>
+  <!-- ANIMATED BACKGROUND: moving stripes. Change its colors in style.css (look for .mp-bg) -->
+  <div class="mp-bg" aria-hidden="true"></div>
+
+  <!-- TOP BUTTONS: Back to the Group Members page and Back to Home -->
+  <div class="mp-top">
+    <a class="btn" href="#/members">Back to Group Members</a>
+    <a class="btn btn-primary" href="#/home">Back to Home</a>
+  </div>
+
+  <!-- ===== TOP SECTION: NAME AND TITLE ===== -->
+  <!-- CHARACTER BANNER IMAGE (Member 6): the wide image behind the name. Change the file name inside url('...') -->
+  <header class="mp-banner banner-img" style="background-image:url('BRO.jpg');">
+    <p class="mp-case">Character Dossier 06</p>
+    <!-- INSERT CHARACTER NAME (big title). Also change data-text to the same name so the glitch effect matches. -->
+    <h1 class="mp-name glitch" data-text="[MEMBER 6 NAME]">Aldrin John A. Soneja</h1>
+    <!-- INSERT CHARACTER TITLE (example: Ultimate Researcher, Ultimate Analyst, Ultimate Designer, Ultimate Investigator, Ultimate Storyteller) -->
+    <p class="mp-title">[WORKING STUDENT]</p>
+  </header>
+
+  <!-- ===== MIDDLE SECTION: PORTRAIT AND DOSSIER ===== -->
+  <div class="mp-stage">
+    <!-- LARGE PORTRAIT AREA: the spotlight beams are automatic. Only change the image file name below. -->
+    <figure class="mp-portrait">
+      <div class="mp-spot" aria-hidden="true"></div>
+      <div class="mp-photo banner-img" style="background-image:url('AJ.jpg');" role="img" aria-label="Portrait of member 6"></div>
+    </figure>
+
+    <!-- CHARACTER DOSSIER (information card): edit the text after each label. Do not delete the <dt> labels. -->
+    <article class="mp-dossier" aria-label="Character dossier 6">
+      <h2>Character Dossier</h2>
+      <dl>
+        <div class="mp-row" style="--i:0;">
+          <dt>Name</dt>
+          <!-- INSERT CHARACTER NAME -->
+          <dd>Aldrin John A. Soneja</dd>
+        </div>
+        <div class="mp-row" style="--i:1;">
+          <dt>Role</dt>
+          <dd>Member</dd>
+        </div>
+        <div class="mp-row" style="--i:2;">
+          <dt>Responsibilities</dt>
+          <!-- INSERT RESPONSIBILITIES (what this member did for the project) -->
+          <dd>August 9 2007</dd>
+        </div>
+        <div class="mp-row" style="--i:3;">
+          <dt>Strengths</dt>
+          <!-- INSERT STRENGTHS -->
+          <dd><br>Rubik's
+<br>Work
+<br>Gym
+<br>Money</dd>
+        </div>
+      </dl>
+    </article>
+  </div>
+
+  <!-- ===== CHARACTER DESCRIPTION ===== -->
+  <section class="mp-desc">
+    <h2>Character Description</h2>
+    <!-- INSERT CHARACTER DESCRIPTION: replace the text below. For more paragraphs, copy the whole <p> line and paste it underneath. -->
+    <p>I’m shy at first, but once we get close, my rowdy side will definitely come out.</p>
+  </section>
+
+  <!-- BOTTOM BUTTONS -->
+  <div class="mp-bottom">
+    <a class="btn" href="#/members">Back to Group Members</a>
+    <a class="btn btn-primary" href="#/home">Back to Home</a>
+  </div>
+</section>
+
+<!-- ########## CHARACTER PROFILE 7 (opens when Member 7's card is clicked) ########## -->
+<section class="page page-member" id="page-member-7" data-page="member-7" aria-label="Character profile 7">
+  <!-- OPTIONAL PAGE BACKGROUND IMAGE (Member 7): change the file name inside url('...') -->
+  <div class="page-bg" style="background-image:url('PAGE\ 2\ BACKGROUND\ 2.jpg');"></div>
+  <!-- ANIMATED BACKGROUND: moving stripes. Change its colors in style.css (look for .mp-bg) -->
+  <div class="mp-bg" aria-hidden="true"></div>
+
+  <!-- TOP BUTTONS: Back to the Group Members page and Back to Home -->
+  <div class="mp-top">
+    <a class="btn" href="#/members">Back to Group Members</a>
+    <a class="btn btn-primary" href="#/home">Back to Home</a>
+  </div>
+
+  <!-- ===== TOP SECTION: NAME AND TITLE ===== -->
+  <!-- CHARACTER BANNER IMAGE (Member 7): the wide image behind the name. Change the file name inside url('...') -->
+  <header class="mp-banner banner-img" style="background-image:url('BRO.jpg');">
+    <p class="mp-case">Character Dossier 07</p>
+    <!-- INSERT CHARACTER NAME (big title). Also change data-text to the same name so the glitch effect matches. -->
+    <h1 class="mp-name glitch" data-text="[MEMBER 7 NAME]">Jhon Angelo G. Villegas</h1>
+    <!-- INSERT CHARACTER TITLE (example: Ultimate Researcher, Ultimate Analyst, Ultimate Designer, Ultimate Investigator, Ultimate Storyteller) -->
+    <p class="mp-title">[BAM!]</p>
+  </header>
+
+  <!-- ===== MIDDLE SECTION: PORTRAIT AND DOSSIER ===== -->
+  <div class="mp-stage">
+    <!-- LARGE PORTRAIT AREA: the spotlight beams are automatic. Only change the image file name below. -->
+    <figure class="mp-portrait">
+      <div class="mp-spot" aria-hidden="true"></div>
+      <div class="mp-photo banner-img" style="background-image:url('BAM.jpg');" role="img" aria-label="Portrait of member 7"></div>
+    </figure>
+
+    <!-- CHARACTER DOSSIER (information card): edit the text after each label. Do not delete the <dt> labels. -->
+    <article class="mp-dossier" aria-label="Character dossier 7">
+      <h2>Character Dossier</h2>
+      <dl>
+        <div class="mp-row" style="--i:0;">
+          <dt>Name</dt>
+          <!-- INSERT CHARACTER NAME -->
+          <dd>Jhon Angelo G. Villegas</dd>
+        </div>
+        <div class="mp-row" style="--i:1;">
+          <dt>Role</dt>
+          <!-- INSERT ROLE (example: Group Leader) -->
+          <dd>Member</dd>
+        </div>
+        <div class="mp-row" style="--i:2;">
+          <dt>Birthday</dt>
+          <!-- INSERT RESPONSIBILITIES (what this member did for the project) -->
+          <dd>???</dd>
+        </div>
+        <div class="mp-row" style="--i:3;">
+          <dt>Strengths</dt>
+          <!-- INSERT STRENGTHS -->
+          <dd>???</dd>
+        </div>
+      </dl>
+    </article>
+  </div>
+
+  <!-- ===== CHARACTER DESCRIPTION ===== -->
+  <section class="mp-desc">
+    <h2>Character Description</h2>
+    <!-- INSERT CHARACTER DESCRIPTION: replace the text below. For more paragraphs, copy the whole <p> line and paste it underneath. -->
+    <p>PLAY MORE GAMES TO UNLOCK THE CHARACTER!</p>
+  </section>
+
+  <!-- BOTTOM BUTTONS -->
+  <div class="mp-bottom">
+    <a class="btn" href="#/members">Back to Group Members</a>
+    <a class="btn btn-primary" href="#/home">Back to Home</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <p>PRESENTED BY: GROUP 5 - ICT B2</p>
+</footer>
+
+<!-- ===================== FINAL CLASS TRIAL: AUDIO, OVERLAYS AND VIDEO ===================== -->
+
+<!-- CORRECT ANSWER SOUND -->
+<audio preload="auto" id="sfxCorrect" class="trial-sfx"><source src="audio/correct.mp3" type="audio/mpeg"></audio>
+
+<!-- WRONG ANSWER SOUND -->
+<audio preload="auto" id="sfxWrong" class="trial-sfx"><source src="audio/wrong.mp3" type="audio/mpeg"></audio>
+
+<!-- GUILTY SOUND (plays when VERDICT: GUILTY appears) -->
+<audio preload="auto" id="sfxGuilty" class="trial-sfx"><source src="audio/guilty.mp3" type="audio/mpeg"></audio>
+
+<!-- EXECUTION SOUND (plays when the execution video starts) -->
+<audio preload="auto" id="sfxExecution" class="trial-sfx"><source src="audio/execution.mp3" type="audio/mpeg"></audio>
+
+<!-- SUCCESS SOUND (plays when YOU ARE FREE appears) -->
+<audio preload="auto" id="sfxSuccess" class="trial-sfx"><source src="audio/success.mp3" type="audio/mpeg"></audio>
+
+<div class="overlay overlay-win" id="winOverlay" role="alertdialog" aria-labelledby="winTitle" hidden>
+  <h2 id="winTitle">YOU ARE FREE.</h2>
+  <p>Congratulations.<br>You have uncovered the truth.</p>
+</div>
+
+<div class="overlay overlay-guilty" id="guiltyOverlay" role="alertdialog" aria-labelledby="guiltyTitle" hidden>
+  <h2 id="guiltyTitle">VERDICT: GUILTY</h2>
+</div>
+
+<div class="execution-wrap" id="executionWrap" hidden>
+  <video id="executionVideo" playsinline preload="auto" disablepictureinpicture>
+    <source src="execution.mp4" type="video/mp4">
+  </video>
+  <p class="video-error" id="videoError" hidden>The execution video could not be loaded.<br>Put <b>execution.mp4</b> (H.264 video) in the same folder as index.html.</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
